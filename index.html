@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nhập Ma trận và Vector</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>max \(c^Tx\) subject to Ax = b and \(x \geq 0\)</h2>
+
+  <div class="section">
+    <label class="size">A rows: <input type="number" id="matrix-rows" value="2" min="1"></label>
+    <label class="size">A cols: <input type="number" id="matrix-cols" value="2" min="1"></label>
+    <button onclick="createInputs()">Tạo ô nhập</button>
+  </div>
+
+  <div class="section" id="matrix-container"></div>
+  <div class="section" id="vector1-container"></div>
+  <div class="section" id="vector2-container"></div>
+
+  <button onclick="callAPI()">send</button>
+
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
